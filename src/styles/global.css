@@ -1,0 +1,36 @@
+/* src/styles/global.css */
+@tailwind base;
+
+
+@layer base {
+    body {
+      @apply text-gray-700;
+    }
+  
+    a {
+      @apply text-primary-500 hover:text-primary-700;
+    }
+  }
+
+@tailwind components;
+
+/* Buttons */
+
+@layer components {
+    .btn,
+    a.btn {
+      @apply font-bold p-4 rounded-md font-sans uppercase no-underline;
+    }
+  
+    .btn-primary,
+    a.btn-primary {
+      @apply bg-primary-500 text-white hover:bg-primary-700 hover:text-gray-50;
+    }
+  
+    .btn-secondary,
+    a.btn-secondary {
+      @apply bg-secondary-500 text-white hover:bg-secondary-700 text-gray-50;
+    }
+  }
+
+@tailwind utilities;
